@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    width: 100%;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: linear-gradient(to right, #bf5afa, #1e4de9); 
+    position: relative;
+    z-index: 10;
+  }
+  
+  .logo img {
+    width: 30px;
+    height: 20px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-left: 30px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #ffeb3b; /* Yellow hover effect */
+  }
+
+  .main{
+    height: 300px;
+    width: auto;
+    background-image:url(images/bg1.jpg);
+    position: relative;
+  }
+
+   h1{
+    /* position: absolute; */
+
+     color: white;
+     text-align: center;
+     /* justify-content: center; */
+    
+     padding: 100px; 
+     
+}
+
+.style-button {
+    position:absolute;
+    display: inline-block;
+    padding: 15px;
+    top: 70%;
+    left: 45%;
+
+    background-color: pink;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+.style-button:hover {
+    background-color: violet;
+}
+.style-button:focus {
+    outline: none;
+    box-shadow: 0 0 5px 2px blue;
+}
+
+.card{
+  width: 300px;
+  height: 250px;
+  padding: 16px;
+  margin: 20px;
+  font-variant: small-caps;
+  text-align: center;
+  box-shadow:  2px 2px 2px 2px rgb(6, 39, 226);
+}
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+.row {margin: 0 -5px;}
+
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+  
+
+.container button{
+  text-align: center;
+  display: block;
+  margin: auto;
+  padding: 5px;
+  font-style: italic;
+  font-variant: small-caps;
+    background-color:#a30ce9;
+    color: #fff;
+    border:none;
+    border-radius:5px;
+    box-shadow: 0px 0px 2px 2px rgb(6, 39, 226);
+
+    
+}
+
+button:hover{
+  background-color:#002ead;
+      transition: 0.7s;
+}
+
+
+  
+  
